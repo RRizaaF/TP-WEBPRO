@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3_No1</title>
+    <link rel="stylesheet" href="TP3_No1.css">
+</head>
+<body>
+    <h1><b>Profil Pribadi</b></h1>
+
+    <div class="foto-video"> <!-- div digunakan untuk membuat container bagi bagian foto dan video -->
+        <div class="foto"> <!-- div untuk mengelompokkan gambar foto profil -->
+            <h3>Foto Profil</h3>
+            <img src="Foto Resmi BG Merah.jpg" height="240px" width="160px"> <!-- img untuk menampilkan gambar foto profil -->
+        </div>
+        <div class="video" style="padding: auto;"> <!-- div untuk mengelompokkan video perkenalan -->
+            <h3>Video Perkenalan</h3>
+            <video src="WIN_20230105_22_57_21_Pro.mp4" height="160" width="240"></video> <!-- video untuk memutar video perkenalan -->
+        </div>
+    </div>
+    
+    <div class="tentang-saya"> <!-- div digunakan untuk mengelompokkan bagian tentang saya -->
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya adalah seorang peternak uang yang dapat menggandakan cash berkali lipat.</p>
+    </div>
+
+    <div class="keterampilan"> <!-- div digunakan untuk mengelompokkan bagian keterampilan -->
+        <h2>Keterampilan</h2>
+        <table> <!-- table untuk membuat tabel yang mengatur daftar keterampilan dan tingkatnya -->
+            <thead>
+                <tr> <!-- tr untuk baris pertama pada header tabel -->
+                    <th>Keterampilan</th> <!-- th untuk membuat judul kolom Keterampilan -->
+                    <th>Tingkat</th> <!-- th untuk membuat judul kolom Tingkat -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- tr untuk membuat baris dalam tabel -->
+                    <td>Sulap</td> <!-- td untuk menampilkan data keterampilan pada tabel -->
+                    <td>Mahir</td> <!-- td untuk menampilkan tingkat keterampilan pada tabel -->
+                </tr>
+                <tr>
+                    <td>Ngepet</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>Santet</td>
+                    <td>Pemula</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="hubungi-saya"> <!-- div digunakan untuk mengelompokkan form kontak -->
+        <form action="#"> <!-- form untuk membuat form yang bisa diisi dan dikirim -->
+            <div class="input-nama"> <!-- div untuk mengelompokkan input nama -->
+                <label for="nama">Nama:</label>
+                <input type="text" name="nama_input" id="nama" placeholder="Masukkan nama"> <!-- input untuk menerima masukan teks berupa nama -->
+            </div>
+            <div class="input-email"> <!-- div untuk mengelompokkan input email -->
+                <label for="email">Email:</label>
+                <input type="text" name="email_input" id="email" placeholder="Masukkan email"> <!-- input untuk menerima masukan teks berupa email -->
+            </div>
+            <div class="input-pesan"> <!-- div untuk mengelompokkan textarea pesan -->
+                <label for="pesan">Pesan:</label><br>
+                <textarea name="pesan_input" id="pesan" rows="3"></textarea><br>
+                <button type="submit" class="btn-kirim">Kirim Pesan</button> <!-- button untuk membuat tombol yang digunakan untuk mengirim form -->
+            </div>
+        </form>
+    </div>
+
+    <div class="sosmed"> <!-- div digunakan untuk mengelompokkan bagian sosial media -->
+        <h2>Media Sosial:</h2>
+        <p><a href="">Linkedin | GitHub | Twitter</a></p> <!-- a digunakan untuk membuat hyperlink menuju halaman media sosial -->
+    </div>
+</body>
+</html>
